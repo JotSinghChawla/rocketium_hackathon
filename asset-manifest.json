@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/rocketium_hackathon/static/css/main.273fef4e.chunk.css",
+    "main.js": "/rocketium_hackathon/static/js/main.0262328a.chunk.js",
+    "main.js.map": "/rocketium_hackathon/static/js/main.0262328a.chunk.js.map",
+    "runtime-main.js": "/rocketium_hackathon/static/js/runtime-main.452996aa.js",
+    "runtime-main.js.map": "/rocketium_hackathon/static/js/runtime-main.452996aa.js.map",
+    "static/css/2.773738b2.chunk.css": "/rocketium_hackathon/static/css/2.773738b2.chunk.css",
+    "static/js/2.f54f19d2.chunk.js": "/rocketium_hackathon/static/js/2.f54f19d2.chunk.js",
+    "static/js/2.f54f19d2.chunk.js.map": "/rocketium_hackathon/static/js/2.f54f19d2.chunk.js.map",
+    "static/js/3.5f5e16c3.chunk.js": "/rocketium_hackathon/static/js/3.5f5e16c3.chunk.js",
+    "static/js/3.5f5e16c3.chunk.js.map": "/rocketium_hackathon/static/js/3.5f5e16c3.chunk.js.map",
+    "index.html": "/rocketium_hackathon/index.html",
+    "static/css/2.773738b2.chunk.css.map": "/rocketium_hackathon/static/css/2.773738b2.chunk.css.map",
+    "static/css/main.273fef4e.chunk.css.map": "/rocketium_hackathon/static/css/main.273fef4e.chunk.css.map",
+    "static/js/2.f54f19d2.chunk.js.LICENSE.txt": "/rocketium_hackathon/static/js/2.f54f19d2.chunk.js.LICENSE.txt",
+    "static/media/birdLogo.450ac6bb.png": "/rocketium_hackathon/static/media/birdLogo.450ac6bb.png",
+    "static/media/font-awesome.min.css": "/rocketium_hackathon/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.452996aa.js",
+    "static/css/2.773738b2.chunk.css",
+    "static/js/2.f54f19d2.chunk.js",
+    "static/css/main.273fef4e.chunk.css",
+    "static/js/main.0262328a.chunk.js"
+  ]
+}
