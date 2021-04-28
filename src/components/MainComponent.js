@@ -1,13 +1,51 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Header from './HeaderComponent'
+import Footer from './FooterComponent'
+import About from "./AboutComponent";
+import Home from './HomeComponent'
+import BirdsComponent from "./BirdsComponent";
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { fetchBirds } from '../redux/ActionCreators'
 
-export class Main extends Component {
-    render() {
-        return (
-            <div>
-                hello
-            </div>
-        )
-    }
+const mapStateToProps = state => {
+    return {
+      birdsState: state.birdsState,
+    }    
 }
 
-export default Main
+const mapDispatchToProps = (dispatch) => ({
+  fetchBirds: () => { dispatch(fetchBirds() ) }
+})
+
+class Main extends Component {
+  
+  componentDidMount() {
+    this.props.fetchBirds()      // this function is called
+  }
+
+  render() {
+    // Method to pass props in Home component
+    const Birds = () => {
+      return ( <BirdsComponent birds={ this.props.birdsState.birds }
+                     birdsLoading={ this.props.birdsState.isLoading }
+                     birdsErrMess={this.props.birdsState.errorMessage }
+                /> )        
+    }
+
+    return (
+      <div >
+       <Header />
+            <Switch location={this.props.location}>
+              <Route path='/home' component={ () => <Home />  } />       
+              <Route exact path='/aboutus' component={ () => <About /> } />
+              <Route exact path='/birds' component={ Birds } />       
+              <Redirect to='/home' />
+            </Switch>
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
