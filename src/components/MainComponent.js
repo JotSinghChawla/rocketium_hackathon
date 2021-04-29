@@ -6,7 +6,7 @@ import Home from './HomeComponent'
 import BirdsComponent from "./BirdsComponent";
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { fetchBirds } from '../redux/ActionCreators'
+import { fetchBirds, deleteBird } from '../redux/ActionCreators'
 
 const mapStateToProps = state => {
     return {
@@ -15,7 +15,8 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchBirds: () => { dispatch(fetchBirds() ) }
+  fetchBirds: () => { dispatch(fetchBirds() ) },
+  deleteBird: birdId => { dispatch(deleteBird(birdId) ) }
 })
 
 class Main extends Component {
@@ -30,6 +31,7 @@ class Main extends Component {
       return ( <BirdsComponent birds={ this.props.birdsState.birds }
                      birdsLoading={ this.props.birdsState.isLoading }
                      birdsErrMess={this.props.birdsState.errorMessage }
+                     deleteBird={ this.props.deleteBird }
                 /> )        
     }
 

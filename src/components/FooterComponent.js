@@ -19,6 +19,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <hr />
             <div className="row justify-content-center">             
                 <div className="col-auto">
                     <p>© Copyright 2018 The BirdWatcher</p>

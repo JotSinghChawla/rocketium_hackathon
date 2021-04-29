@@ -1,10 +1,10 @@
 import React from 'react'
-import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Media, Button } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import Loading from "./LoadingComponent";
 
 
-const BirdsComponent = ({ birds, birdsLoading, birdsErrMess }) => {
+const BirdsComponent = ({ birds, birdsLoading, birdsErrMess, deleteBird }) => {
     
     const RenderList = ({ input }) => {
         return (
@@ -19,6 +19,11 @@ const BirdsComponent = ({ birds, birdsLoading, birdsErrMess }) => {
                         <p> Sighting Date: {new Date(input.sightingDate.toDate()).toUTCString()}</p>
                         <p> Last Location: {input.location} </p>
                         <p> Size: {input.species.size} | Weight: {input.species.weight} | Color: {input.species.color} </p>
+                    </Media>
+                    <Media>
+                        <Button color='danger' onClick={ () => deleteBird( input._id ) }>
+                                <span className='fa fa-close fa-lg'></span> 
+                        </Button>
                     </Media>
                 </Media>       
         )
