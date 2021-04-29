@@ -31,3 +31,13 @@ export const fetchBirds = () => (dispatch) => {
         .then( birds => dispatch( addBirds(birds) ) )
         .catch( error => dispatch( birdsFailed(error.message) ) );
 }
+
+export const deleteBird = birdId => dispatch => {
+
+    return firestore.collection('birds').doc( birdId ).delete()
+                .then( () => {
+                    dispatch( fetchBirds() );
+                    console.log('Bird with ID:' + birdId + ' is Deleted!')
+                })
+                .catch( error => console.log( error.message ) ); 
+};
