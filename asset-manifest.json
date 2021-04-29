@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rocketium_hackathon/static/css/main.21ba117d.chunk.css",
-    "main.js": "/rocketium_hackathon/static/js/main.fb15f254.chunk.js",
-    "main.js.map": "/rocketium_hackathon/static/js/main.fb15f254.chunk.js.map",
+    "main.js": "/rocketium_hackathon/static/js/main.945b17ce.chunk.js",
+    "main.js.map": "/rocketium_hackathon/static/js/main.945b17ce.chunk.js.map",
     "runtime-main.js": "/rocketium_hackathon/static/js/runtime-main.452996aa.js",
     "runtime-main.js.map": "/rocketium_hackathon/static/js/runtime-main.452996aa.js.map",
     "static/css/2.773738b2.chunk.css": "/rocketium_hackathon/static/css/2.773738b2.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.773738b2.chunk.css",
     "static/js/2.f54f19d2.chunk.js",
     "static/css/main.21ba117d.chunk.css",
-    "static/js/main.fb15f254.chunk.js"
+    "static/js/main.945b17ce.chunk.js"
   ]
 }
